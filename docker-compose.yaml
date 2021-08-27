@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:  
+  xupnpd:
+    build: .
+    image: archlinux
+    container_name: xupnp
+    network_mode: host
+    volumes:
+      - /home/user/playlists/:/xupnpd/playlists/
+      - /home/user/Scrivania/config/:/xupnpd/config/
+    restart: always
+    
