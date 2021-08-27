@@ -1,8 +1,6 @@
 # Xupnp_docker
 Create Xupnp with docker
 
-docker-compose up -d 
-
 in the folder Xupnpd/run already present Xupnpd x86 binary file
 from 
 https://github.com/clark15b/xupnpd/tree/master/src 
