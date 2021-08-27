@@ -7,7 +7,7 @@ services:
     container_name: xupnp
     network_mode: host
     volumes:
-      - /home/user/playlists/:/xupnpd/playlists/
-      - /home/user/Scrivania/config/:/xupnpd/config/
+      - /playlists/:/xupnpd/playlists/
+      - /config/:/xupnpd/config/
     restart: always
     
