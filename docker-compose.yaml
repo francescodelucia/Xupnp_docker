@@ -2,12 +2,14 @@ version: "3.9"
 
 services:  
   xupnpd:
-    build: .
-    image: archlinux
+    image: fdelucia/xupnpd
     container_name: xupnp
     network_mode: host
     volumes:
       - /playlists/:/xupnpd/playlists/
       - /config/:/xupnpd/config/
     restart: always
-    
+
+volumes:
+   playlists:
+   config:
